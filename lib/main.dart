@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/futures.dart';
+
+// import 'futures.dart';
+import 'stream1.dart';
 
 void main() {
   runApp(const MyApp());
-  futureRequest();
+  // futureRequest();
+  counter();
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: Text('hola'),
+      home: Center(child: Text('hola')),
     );
   }
 }
